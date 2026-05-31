@@ -31,8 +31,7 @@ export default function HomePage() {
     ],
     Cloud: ["AWS", "Azure", "Docker", "Terraform", "CI/CD"],
     Messaging: ["Kafka", "RabbitMQ", "WebSocket", "gRPC"],
-    Mobile: ["Android", "Jetpack Compose", "Flutter"],
-    Frontend: ["React", "Angular", "TypeScript"],
+    Frontend: ["Android", "Jetpack Compose", "Flutter","React", "Angular", "TypeScript"],
   };
 
   const projects = [
@@ -40,18 +39,21 @@ export default function HomePage() {
       title: "AI Goal Tracking Platform",
       description:
           "Built scalable workflow orchestration using Kotlin, Spring Boot, Temporal, and Azure AI Search.",
+      image:"/images/goal.png",
       stack: ["Kotlin", "Spring Boot", "Temporal", "Azure"],
     },
     {
       title: "VPN Android Platform",
       description:
           "Developed secure Android & Android TV VPN client with split tunneling, encrypted storage, and resilient networking.",
+      image:"/images/vpn.png",
       stack: ["Kotlin", "Jetpack Compose", "Ktor", "Android"],
     },
     {
       title: "Church Engagement Platform",
       description:
           "Built a scalable church platform with real-time chat, media streaming, and cloud deployment.",
+      image:"/images/church.png",
       stack: ["Kotlin", "AWS", "WebSocket", "PostgreSQL"],
     },
   ];
@@ -62,15 +64,23 @@ export default function HomePage() {
         <nav className="fixed top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-[#0B1220]/70 backdrop-blur-xl">
           <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <h1 className="font-bold text-xl tracking-tight">
-              Abolade<span className="text-green-600">.</span>
+              Abolade <span className="text-green-600">.</span>
             </h1>
 
-            <button
-                onClick={() => setDark(!dark)}
-                className="w-10 h-10 rounded-full border border-slate-300 dark:border-slate-700 flex items-center justify-center hover:scale-105 transition"
-            >
-              {dark ? <Sun size={18} /> : <Moon size={18} />}
-            </button>
+            <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
+             +234 8063705793
+            </p>
+
+            <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
+             aboladelawal2019@gmail.com
+            </p>
+
+            {/*<button*/}
+            {/*    onClick={() => setDark(!dark)}*/}
+            {/*    className="w-10 h-10 rounded-full border border-slate-300 dark:border-slate-700 flex items-center justify-center hover:scale-105 transition"*/}
+            {/*>*/}
+            {/*  {dark ? <Sun size={18} /> : <Moon size={18} />}*/}
+            {/*</button>*/}
           </div>
         </nav>
 
@@ -98,11 +108,11 @@ export default function HomePage() {
               </p>
 
               <div className="flex flex-wrap gap-4 mt-10">
-                <button className="px-6 py-3 rounded-xl bg-green-600 hover:bg-green-700 text-white font-medium transition">
-                  View Projects
-                </button>
+                {/*<button className="px-6 py-3 rounded-xl bg-green-600 hover:bg-green-700 text-white font-medium transition">*/}
+                {/*  View Projects*/}
+                {/*</button>*/}
                 <a
-                    href="Abolade akindeji .pdf"
+                    href="Abolade akindeji resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-6 py-3 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition flex items-center gap-2"
@@ -112,28 +122,28 @@ export default function HomePage() {
                 </a>
               </div>
 
-              <div className="flex gap-4 mt-10">
-                <a
-                    href="https://linkedin.com"
-                    className="w-11 h-11 rounded-xl border border-slate-300 dark:border-slate-700 flex items-center justify-center hover:bg-green-600 hover:text-white transition"
-                >
-                  {/*<Linkedin size={18} />*/}
-                </a>
+              {/*<div className="flex gap-4 mt-10">*/}
+              {/*  <a*/}
+              {/*      href="https://linkedin.com"*/}
+              {/*      className="w-11 h-11 rounded-xl border border-slate-300 dark:border-slate-700 flex items-center justify-center hover:bg-green-600 hover:text-white transition"*/}
+              {/*  >*/}
+              {/*    /!*<Linkedin size={18} />*!/*/}
+              {/*  </a>*/}
 
-                <a
-                    href="mailto:example@gmail.com"
-                    className="w-11 h-11 rounded-xl border border-slate-300 dark:border-slate-700 flex items-center justify-center hover:bg-green-600 hover:text-white transition"
-                >
-                  <Mail size={18} />
-                </a>
+              {/*  <a*/}
+              {/*      href="mailto:example@gmail.com"*/}
+              {/*      className="w-11 h-11 rounded-xl border border-slate-300 dark:border-slate-700 flex items-center justify-center hover:bg-green-600 hover:text-white transition"*/}
+              {/*  >*/}
+              {/*    <Mail size={18} />*/}
+              {/*  </a>*/}
 
-                <a
-                    href="#"
-                    className="w-11 h-11 rounded-xl border border-slate-300 dark:border-slate-700 flex items-center justify-center hover:bg-green-600 hover:text-white transition"
-                >
-                  {/*<Github size={18} />*/}
-                </a>
-              </div>
+              {/*  <a*/}
+              {/*      href="#"*/}
+              {/*      className="w-11 h-11 rounded-xl border border-slate-300 dark:border-slate-700 flex items-center justify-center hover:bg-green-600 hover:text-white transition"*/}
+              {/*  >*/}
+              {/*    /!*<Github size={18} />*!/*/}
+              {/*  </a>*/}
+              {/*</div>*/}
             </motion.div>
 
             {/* RIGHT */}
@@ -154,7 +164,7 @@ export default function HomePage() {
                 <div className="absolute w-[400px] h-[400px] bg-green-500/10 blur-3xl rounded-full" />
 
                 <Image
-                    src="/images/p2.svg"
+                    src="/images/a.png"
                     alt="Developer Illustration"
                     width={700}
                     height={700}
@@ -167,7 +177,7 @@ export default function HomePage() {
         </section>
 
         {/* ABOUT */}
-        <section className="py-24 border-t border-slate-200 dark:border-slate-800">
+        <section className="py-24 border-t border-slate-400 dark:border-slate-800">
           <div className="max-w-7xl mx-auto px-6">
             <div className="max-w-3xl">
               <p className="text-green-600 font-semibold mb-3">About</p>
@@ -176,11 +186,44 @@ export default function HomePage() {
                 Engineering reliable systems for scale.
               </h2>
 
-              <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-                Senior software engineer specializing in backend systems,
-                Android applications, microservices, workflow orchestration,
-                cloud-native infrastructure, and scalable APIs.
-              </p>
+              {/*<p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">*/}
+              {/*  Senior software engineer specializing in backend systems,*/}
+              {/*  Android applications, microservices, workflow orchestration,*/}
+              {/*  cloud-native infrastructure, and scalable APIs.*/}
+              {/*</p>*/}
+
+              <section className="max-w-4xl mx-auto py-12">
+                <div className="mb-8">
+                  <h2 className="text-3xl font-bold  mb-4">Professional Summary</h2>
+                  <p className="leading-relaxed">
+                    Highly experienced Full-Stack Software Engineer with a proven track record of
+                    successfully delivering over <span className="font-semibold"> 100+ projects on Fiverr </span>
+                    for clients worldwide. Specialized in building scalable web applications,
+                    enterprise software, payment processing systems, mobile applications, and
+                    cloud-based solutions using modern technologies and industry best practices.
+                  </p>
+                </div>
+
+                <div className="space-y-4 leading-relaxed">
+                  <p>
+                    Expertise spans backend development with <strong>Java</strong> and
+                    <strong> Spring Boot </strong>, frontend engineering with
+                    <strong> React </strong>, and mobile application development using
+                    <strong> Kotlin </strong>. Experienced in designing and implementing
+                    high-performance, secure, and scalable applications for startups,
+                    entrepreneurs, and businesses across multiple industries.
+                  </p>
+
+                  <p>
+                    Adept at managing projects from concept to deployment, translating business
+                    requirements into production-ready software. Known for delivering clean,
+                    maintainable code, effective communication, and consistently exceeding
+                    client expectations, resulting in the successful completion of more than
+                    100 freelance projects.
+                  </p>
+                </div>
+              </section>
+
             </div>
 
             <div className="grid md:grid-cols-4 gap-6 mt-14">
@@ -234,53 +277,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* EXPERIENCE */}
-        <section className="py-24 border-t border-slate-200 dark:border-slate-800">
-          <div className="max-w-5xl mx-auto px-6">
-            <p className="text-green-600 font-semibold mb-3">Experience</p>
 
-            <h2 className="text-4xl font-bold mb-14">
-              Professional Journey.
-            </h2>
-
-            <div className="space-y-10">
-              {[
-                {
-                  role: "Senior Java/Kotlin Engineer",
-                  company: "GoalSpaces Technologies",
-                  date: "2023 - Present",
-                },
-                {
-                  role: "Senior Android Engineer",
-                  company: "VPN Application Platform",
-                  date: "2024 - Present",
-                },
-                {
-                  role: "Full-Stack Kotlin Engineer",
-                  company: "Church Engagement Platform",
-                  date: "2024 - Present",
-                },
-              ].map((exp) => (
-                  <div
-                      key={exp.company}
-                      className="p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900"
-                  >
-                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-                      <div>
-                        <h3 className="text-2xl font-semibold">{exp.role}</h3>
-
-                        <p className="text-green-600 mt-2">{exp.company}</p>
-                      </div>
-
-                      <span className="text-slate-500 dark:text-slate-400">
-                    {exp.date}
-                  </span>
-                    </div>
-                  </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* PROJECTS */}
         <section className="py-24">
@@ -299,11 +296,19 @@ export default function HomePage() {
                       className="rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900"
                   >
                     <div className="h-52 bg-gradient-to-br from-green-100 to-green-50 dark:from-green-900/30 dark:to-slate-900 flex items-center justify-center">
-                      <img
-                          src="https://undraw.co/api/illustrations/undraw_server_cluster_jwwq.svg"
-                          className="w-44"
-                          alt=""
+                      <Image
+                          src={project.image}
+                          alt={project.title}
+                          width={800}
+                          height={500}
+                          priority
+                          className="w-full h-full object-cover"
                       />
+                      {/*<img*/}
+                      {/*    src="{project.image}"*/}
+                      {/*    className="w-44"*/}
+                      {/*    alt=""*/}
+                      {/*/>*/}
                     </div>
 
                     <div className="p-8">
@@ -332,6 +337,58 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* EXPERIENCE */}
+        <section className="py-24 border-t border-slate-200 dark:border-slate-800">
+          <div className="max-w-5xl mx-auto px-6">
+            <p className="text-green-600 font-semibold mb-3">Experience</p>
+
+            <h2 className="text-4xl font-bold mb-14">
+              Professional Journey.
+            </h2>
+
+            <div className="space-y-10">
+              {[
+                {
+                  role: "Senior Java/Kotlin Engineer",
+                  company: "GoalSpaces Technologies",
+                  date: "2023 - Present",
+                  image: "/images/logo.png",
+                },
+                {
+                  role: "Senior Android Engineer",
+                  company: "VPN Application Platform",
+                  date: "2024 - Present",
+                  image: "/images/logo.png",
+                },
+                {
+                  role: "Full-Stack Kotlin Engineer",
+                  company: "Church Engagement Platform",
+                  date: "2024 - Present",
+                  image: "/images/vpn.png"
+                },
+              ].map((exp) => (
+                  <div
+                      key={exp.company}
+                      className="p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900"
+                  >
+                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+                      <div>
+                        <h3 className="text-2xl font-semibold">{exp.role}</h3>
+
+                        <p className="text-green-600 mt-2">{exp.company}</p>
+                      </div>
+
+                      <span className="text-slate-500 dark:text-slate-400">
+                    {exp.date}
+                  </span>
+                    </div>
+                  </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+
         {/* CONTACT */}
         <section className="py-24 border-t border-slate-200 dark:border-slate-800">
           <div className="max-w-4xl mx-auto px-6 text-center">
@@ -347,14 +404,14 @@ export default function HomePage() {
 
             <div className="flex justify-center gap-4 mt-10">
               <a
-                  href="mailto:youremail@gmail.com"
+                  href="mailto:aboladelawal2019@gmail.com"
                   className="px-6 py-3 rounded-xl bg-green-600 hover:bg-green-700 text-white transition"
               >
                 Send Email
               </a>
 
               <a
-                  href="https://linkedin.com"
+                  href="www.linkedin.com/in/abolade-akindeji-206b35305"
                   className="px-6 py-3 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
               >
                 LinkedIn
